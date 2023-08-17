@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #535c68;
+}
+
+#clock h2{
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+}
+
+#clock #time{
+    display: flex;
+}
+
+#clock #time div{
+    position: relative;
+    margin: 0 5px;
+}
+
+#clock #time div span{
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    background: #000;
+    color: #fff;
+    z-index: 10;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0,.2);
+}
+
+#clock #time div span:nth-child(2){
+    height: 30px;
+    font-size: 0.7em;
+    background: #2f3640;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    z-index: 9;
+    box-shadow: none;
+    text-transform: uppercase;
+}
+
+#clock #time div:last-child span{
+    background: #000;
+}
+
+#clock #time div:last-child span:nth-child(2){
+    background: #2f3640;
+}
